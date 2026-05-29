@@ -342,13 +342,13 @@ textarea.copy-fallback{
         </div>
 
         <div class="field">
-            <label class="field-label" for="arrivalTime">着弾UTCを直接入力</label>
+            <label class="field-label" for="arrivalTime">A.着弾UTCを直接入力</label>
             <input type="text" id="arrivalTime" inputmode="text" placeholder="例 12:30:00">
             <p class="hint">ここに入力した場合、下の「集結＋追加時間」より優先されます。</p>
         </div>
 
         <div class="field">
-            <label class="field-label" for="baseRally">基準UTCから計算</label>
+            <label class="field-label" for="baseRally">B-1.基準UTCから計算</label>
             <select id="baseRally">
                 <option value="60">1分集結</option>
                 <option value="300">5分集結</option>
@@ -357,7 +357,7 @@ textarea.copy-fallback{
         </div>
 
         <div class="field">
-            <label class="field-label" for="extraTime">追加時間</label>
+            <label class="field-label" for="extraTime">B-2.追加時間</label>
             <input type="text" id="extraTime" inputmode="text" placeholder="例 2:30">
             <p class="hint">直接入力が空なら、基準UTC + 集結時間 + 追加時間で着弾UTCを作ります。</p>
         </div>
@@ -670,8 +670,8 @@ function fallbackCopy(text){
     document.body.removeChild(textarea);
 }
 
-addMember("Koko","1:20");
-addMember("Beko","1:35");
+addMember("ココ","0:40");
+addMember("ベコ","1:10");
 </script>
 
 </body>
