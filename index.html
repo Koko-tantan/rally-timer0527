@@ -343,7 +343,7 @@ textarea.copy-fallback{
 
         <div class="field">
             <label class="field-label" for="arrivalTime">着弾UTCを直接入力</label>
-            <input type="text" id="arrivalTime" inputmode="numeric" placeholder="例 12:30:00">
+            <input type="text" id="arrivalTime" inputmode="text" placeholder="例 12:30:00">
             <p class="hint">ここに入力した場合、下の「集結＋追加時間」より優先されます。</p>
         </div>
 
@@ -358,7 +358,7 @@ textarea.copy-fallback{
 
         <div class="field">
             <label class="field-label" for="extraTime">追加時間</label>
-            <input type="text" id="extraTime" inputmode="numeric" placeholder="例 2:30">
+            <input type="text" id="extraTime" inputmode="text" placeholder="例 2:30">
             <p class="hint">直接入力が空なら、基準UTC + 集結時間 + 追加時間で着弾UTCを作ります。</p>
         </div>
     </div>
@@ -468,7 +468,7 @@ function addMember(name="", march="", rally="300"){
 
     const marchInput = document.createElement("input");
     marchInput.className = "march";
-    marchInput.inputMode = "numeric";
+    marchInput.inputMode = "text";
     marchInput.placeholder = "例 1:20";
     marchInput.value = march;
 
